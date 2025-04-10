@@ -22,11 +22,11 @@ systemctl start chronyd
 
 # Configure PTP using the provided script
 echo "Configuring PTP using YugabyteDB script..."
-sudo bash ./bin/configure_ptp.sh
+sudo bash ./yugabyte-2024.2.2.2/bin/configure_ptp.sh
 
 # Configure ClockBound using the provided script
 echo "Configuring ClockBound using YugabyteDB script..."
-sudo bash ./bin/configure_clockbound.sh
+sudo bash ./yugabyte-2024.2.2.2/bin/configure_clockbound.sh
 
 # 2. Set ulimits
 echo "Setting ulimits..."
