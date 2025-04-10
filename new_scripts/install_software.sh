@@ -3,8 +3,6 @@
 # YugabyteDB System Configuration Script for Amazon Linux
 # This script configures system settings recommended for YugabyteDB on Amazon Linux
 
-sudo -i
-
 # Check if running as root
 if [[ $EUID -ne 0 ]]; then
    echo "This script must be run as root or with sudo privileges"
